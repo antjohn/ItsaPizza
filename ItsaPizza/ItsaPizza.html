@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__engine_learncodinganywhere_com">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>Welcome-a to-a It's-a Pizz-a</title>
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+            <link href="./js/css" rel="stylesheet">
+            <link rel="stylesheet" href="./js/itsapizza.css">
+	</head>
+	<body style="background: url(./im/pizzapicturesmall.png) center center fixed;" data-gr-c-s-loaded="true">
+		<div class="container">
+		<div id="menuBG"><h1>It's-a Pizz-a Pizzari-a</h1><br>
+            <div id="menuBG"><h2>Make-a your-a selection-a!</h2><br>
+			<form id="frmMenu">
+				<div class="menu">
+					<h3>Size</h3>
+					<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal-a Pizza-a<br>
+					<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium-a Pizza-a<br>
+					<input class="size" type="radio" name="Size" value="Large Pizza" checked=""> Large-a Pizza-a<br>
+					<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra-a Large-a Pizza-a<br>
+				</div>
+				<div class="menu">
+					<h3>Meats</h3>
+					<input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy-a<br>                    
+					<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian-a Bacon-a<br> 
+					<input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken-a<br>
+					<input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground-a Beef-a<br>
+					<input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni-a<br>
+					<input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage-a<br>
+				</div>
+				<div class="menu">
+					<h3>Veggies</h3>
+					<input class="veggies" type="checkbox" name="Veggie" value="Green Peppers"> Green-a Peppers-a<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Jalapeno"> Jalapeno-a<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Mushrooms"> Mushrooms-a<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Olives"> Olives-a<br> 
+					<input class="veggies" type="checkbox" name="Veggie" value="Onions"> Onions-a<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Pineapple"> Pineapple-a<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Spinach"> Spinach-a<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Tomatoes"> Tomatoes-a<br>
+				</div>
+				<div class="menu">
+					<h3>Cheese</h3>
+					<input class="cheese" type="radio" name="Cheese" value="No Cheese"> No-a Cheese-a<br>
+					<input class="cheese" type="radio" name="Cheese" value="Regular Cheese" checked=""> Regular-a Cheese-a<br>
+					<input class="cheese" type="radio" name="Cheese" value="Extra Cheese"> Extra-a Cheese-a<br>
+				</div>
+				<div class="menu">
+					<h3>Sauce</h3>
+					<input class="sauce" type="radio" name="Sauce" value="No Sauce"> No-a Sauce-a<br>
+					<input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce"> Barbeque-a Sauce-a<br>
+					<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce" checked=""> Marinara-a Sauce-a<br>
+					<input class="sauce" type="radio" name="Sauce" value="White Sauce"> White-a Sauce-a<br>
+				</div>
+				<div class="menu">
+					<h3>Crust</h3>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese-a Stuffed-a Crust-a<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic-a Butter-a Crust-a<br>
+					<input class="crust" type="radio" name="Crust" value="House Special Crust"> House-a Special-a Crust-a<br>
+					<input class="crust" type="radio" name="Crust" value="Plain Crust" checked=""> Plain-a Crust-a<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy-a Crust-a<br>
+				</div>
+			</form><br>
+			<div class="controls">
+				<div class="button" onclick="getReceipt()">
+					<p>Place Order</p>
+				</div>
+				<div class="button" onclick="clearAll()">
+					<p>Cancel</p>
+				</div>
+			</div>
+			<div id="cart" style="opacity: 1;">
+				<div id="title1" align="center"><h3>You Ordered</h3></div>
+				<div id="title2" align="center"><h3>Subtotal</h3></div>
+				<div id="showText1" align="center">Personal Pizza<br>Regular Cheese<br>Marinara Sauce<br>Plain Crust<br></div>
+				<div id="showText2" align="center">$6<br>$0<br>$0<br>$0<br></div>
+				<div id="totalPrice1" align="center"><h3>Total Price</h3></div>
+				<div id="totalPrice2" align="center">$6.00</div>
+			</div>
+            </div>
+        </div>
+        </div>
+		<script src="./js/itsapizza.js"></script>
+    </body>
+</html>
